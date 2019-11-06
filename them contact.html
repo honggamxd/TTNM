@@ -395,7 +395,7 @@
                                         hàng</span></a></li>
                             <li class="open"><a href="#" class=""><span class="menu-text">Danh sách contacts</span></a>
                             </li>
-                            <li class="open"><a href="them%20contact.html" class=""><span class="menu-text">Thêm contact</span></a></li>
+                            <li class="open"><a href="them%20contact.html" class=""><span class="menu-text menu-active">Thêm contact</span></a></li>
                         </ul>
                     </li>
                     <li class="open"><a href="http://crmnative.topica.vn/admin/report/BC14" class="dropdown-toggle"><i
@@ -403,7 +403,7 @@
                             class="arrow icon-angle-down"></b></a>
                         <ul class="submenu" id="83" style="display:none;">
                             <li class="open"><a href="#" class=""><span class="menu-text" >Báo cáo hiệu quả làm việc</span></a></li>
-                            <li class="open"><a href="bao%20cao%20chat%20luong%20gap%20go%20khach%20hang.html" class="active"><span class="menu-text menu-active">Báo cáo chất lượng
+                            <li class="open"><a href="bao%20cao%20chat%20luong%20gap%20go%20khach%20hang.html" class="active"><span class="menu-text">Báo cáo chất lượng
                                         gặp gỡ khách hàng</span></a></li>
                         </ul>
                     </li>
@@ -457,13 +457,13 @@
         <li>
             <a href="javascript:void(0);">Danh mục</a>
         </li>
-        <li class="active">Báo cáo chất lượng gặp gỡ khách hàng</li>
+        <li class="active">Thêm contact</li>
     </ul>
 </div>
 
 <div class="page-content">
     <div class="page-header">
-        <h1>Báo cáo chất lượng gặp gỡ khách hàng</h1>
+        <h1>Thêm contact</h1>
     </div>
     <!-- /.page-header -->
 
@@ -483,10 +483,10 @@
                         <input id="NameCus" name="NameCus" style="width: 100%;" type="text" value="">
                     </div>
                     <div class="col-sm-2">
-                        <label class="bolder">Ngày gặp: </label>
+                        <label class="bolder">Level: </label>
                     </div>
                     <div class="col-sm-4">
-                        <input id="StartDate" name="CallToDate" style="width: 100%;" type="date" value="">
+                        <input id="LevelCus" name="LevelCus" style="width: 100%;" type="text" value="">
                     </div>
                 </div>
                     <div class="form-group">
@@ -497,19 +497,13 @@
                             <input id="phoneCus" name="phoneCus" style="width: 100%;" type="text" value="">
                         </div>
                         <div class="col-sm-2">
-                            <label class="bolder">Thời gian: </label>
+                            <label class="bolder">Thời gian tiếp cận </label>
                         </div>
-                        <div class="col-sm-1">
-                            <label class="bolder">Từ: </label>
-                        </div>
-                        <div class="col-sm-1">
+                        <div class="col-sm-2">
                         <input id="starttime" name="starttime" style="width: 100%;" type="time" value="">
                     </div>
-                        <div class="col-sm-1">
-                            <label class="bolder">Đến: </label>
-                        </div>
-                        <div class="col-sm-1">
-                            <input id="endtime" name="endtime" style="width: 100%;" type="time" value="">
+                        <div class="col-sm-2">
+                            <input id="StartDate" name="CallToDate" style="width: 100%;" type="date" value="">
                         </div>
                     </div>
 
@@ -520,23 +514,13 @@
                         <div class="col-sm-3">
                             <input id="emailCus" name="emailCus" style="width: 100%;" type="text" value="">
                         </div>
-                        <div class="col-sm-2">
-                            <label class="bolder">Mục đích: </label>
-                        </div>
-                        <div class="col-sm-4">
-                            <select id="inputState" class="form-control">
-                                <option selected>Về hợp đồng</option>
-                                <option>Về sản phẩm</option>
-                                <option>Về chăm sóc khách hàng</option>
-                            </select>
-                    </div>
                     </div>
 
 
 
                     <div class="form-group">
                         <div class="col-sm-2">
-                            <label class="bolder">Nội dung</label>
+                            <label class="bolder">Ghi chú</label>
                         </div>
                     </div>
                     <div class="form-group">
@@ -548,7 +532,16 @@
                             <center id="div_loading"></center>
                         </div>
                     </div>
-                </div>
+    <div class="form-group">
+        <div class="col-sm-9">
+
+        </div>
+        <div class="col-sm-3">
+            <button type="button" class="btn-import btn-primary" id="btnReport"
+                    style="height:40px">Thêm contact</button>
+        </div>
+    </div>
+
 </form>
             <div id="mydiv">
                 <iframe id="frame" style="width: 100%; height: 400px; border: none;" src="./bao cao lich su cuoc goi_files/saved_resource.html"></iframe>
